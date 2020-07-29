@@ -37,7 +37,7 @@ The directory structure of a generated Revel application:
 ### GET Trains:
 curl --location --request GET 'http://localhost:9000/v1/trains'
 
-### GET Trains by ID:
+### GET Train by ID:
 curl --location --request GET 'http://localhost:9000/v1/trains/1'
 
 ### CREATE Train:
