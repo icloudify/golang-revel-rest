@@ -34,13 +34,13 @@ The directory structure of a generated Revel application:
 
 ## API Document:
 
-###GET Trains:
+### GET Trains:
 curl --location --request GET 'http://localhost:9000/v1/trains'
 
-###GET Trains by ID:
+### GET Trains by ID:
 curl --location --request GET 'http://localhost:9000/v1/trains/1'
 
-###CREATE Train:
+### CREATE Train:
 curl --location --request POST 'http://localhost:9000/v1/trains' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -48,7 +48,7 @@ curl --location --request POST 'http://localhost:9000/v1/trains' \
   "operating_status": true
 }'
 
-###UPDATE Train:
+### UPDATE Train:
 curl --location --request PATCH 'http://localhost:9000/v1/trains/1' \
 --header 'Content-Type: application/json'
 --data-raw '{
