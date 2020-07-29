@@ -1,0 +1,6 @@
+test-results/
+tmp/
+.idea/
+target/
+tests/
+none
