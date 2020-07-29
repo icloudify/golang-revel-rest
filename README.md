@@ -56,7 +56,7 @@ curl --location --request PATCH 'http://localhost:9000/v1/trains/1' \
   "operating_status": false
 }'
 
-###DELETE train id:
+### DELETE train id:
 curl --location --request DELETE 'http://localhost:9000/v1/trains/1'
 
 ## Help
