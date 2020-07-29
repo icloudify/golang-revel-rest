@@ -2,10 +2,9 @@
 
 A high-productivity web framework for the [Go language](http://www.golang.org/).
 
-
 ### Start the web server:
 
-   revel run myapp
+   revel run revel-rest
 
 ### Go to http://localhost:9000/ and you'll see:
 
@@ -33,6 +32,32 @@ The directory structure of a generated Revel application:
 
     tests/            Test suites
 
+## API Document:
+
+###GET Trains:
+curl --location --request GET 'http://localhost:9000/v1/trains'
+
+###GET Trains by ID:
+curl --location --request GET 'http://localhost:9000/v1/trains/1'
+
+###CREATE Train:
+curl --location --request POST 'http://localhost:9000/v1/trains' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "driver_name": "vin",
+  "operating_status": true
+}'
+
+###UPDATE Train:
+curl --location --request PATCH 'http://localhost:9000/v1/trains/1' \
+--header 'Content-Type: application/json'
+--data-raw '{
+  "driver_name": "Live",
+  "operating_status": false
+}'
+
+###DELETE train id:
+curl --location --request DELETE 'http://localhost:9000/v1/trains/1'
 
 ## Help
 
